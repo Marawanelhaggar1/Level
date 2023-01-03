@@ -1,0 +1,303 @@
+.navbar .level-nav-link.nav-link{
+    padding-right: var(--padding-primary) ;
+    padding-left: var(--padding-primary);
+}
+.navbar .level-nav-link.nav-link:hover{
+    background-color: var(--color-primary);
+}
+
+@media (min-width:768px) {
+    .navbar{
+        height: var(--height-primary);
+    }
+
+    .level-nav-link.nav-link{
+        padding: calc(var(--padding-primary)*2) var(--padding-primary);
+    }
+}
+
+.navbar a{
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a i{
+    background-color: var(--color-primary);
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+}
+.navbar a h1{
+    margin: 0;
+}
+
+.hero{
+    background: url(/assets/image/snow-capped-mountain-wallpaper-8p4a5kaz122z9xyn.jpg) no-repeat center center /cover;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.search-form{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: var(--padding-primary) var(--size-double);
+    gap: var(--size-half);
+}
+
+.form-group{
+    flex: 1 25%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+
+.form-group .form-control{
+    padding: var(--size-half);
+    padding-left: var(--size-double);
+    border-radius: 0;
+}
+
+.form-group i{
+    color: var(--color-primary);
+    font-size: var(--font-size-title);
+    position: absolute;
+    left: var(--size-half);
+}
+.btn-primary{
+    background-color: var(--color-primary);
+    font-weight: var(--font-bold);
+    width: 100%;
+    border-radius: 0;
+    text-transform: uppercase;
+    border: none;
+}
+.need-help{
+    background-color: white;
+    position: relative;
+    top: -11px;
+}
+.need-help a{
+    position: absolute;
+    right: 20px;
+}
+
+.btn-primary:hover{
+    background-color: #e42f38;
+}
+
+section{
+    padding: var(--size-double) 0;
+    position: relative;
+}
+
+.section-color{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.section-color .section-title{
+    font-size: var(--font-size-section-title);
+    font-weight: var(--font-bold);
+    color: white;
+}
+
+.section-subtitle{
+    font-size: var(--font-size-title);
+}
+.btn-white{
+    color: inherit;
+    padding: var(--size-half) var(--padding-primary);
+    border: 2px solid white;
+}
+
+.btn-white:hover{
+    background-color: white ;
+    color: var(--color-primary);
+}
+
+.section-down-arrow{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: var(--height-primary);
+}
+.article{
+    text-align: center;
+    color: var(--color-primary);
+    margin-top: var(--size-double);
+    padding: var(--padding-primary);
+    transition: all .2s ease-in;
+}
+
+.article:hover{
+    scale: 1.1;
+    box-shadow: 0 0 8px 0 black;
+}
+.article .article-icon{
+    font-size: 4rem;
+    margin-bottom: var(--size-primary);
+}
+.btn-fit{
+    width: max-content;
+}
+
+
+
+.section-gray{
+    background-color: var(--color-light);
+}
+
+.level-slider-item{
+    background-color: white;
+    margin-right: var(--size-half);
+}
+
+
+
+.level-slider-item-container{
+    padding: var(--padding-primary);
+}
+.level-slider-item img{
+    width: 100%;
+}
+
+.level-slider-item h3{
+    font-size: var(--font-size-title);
+    color: var(--color-primary);
+}
+.level-slider-item p{
+    color: var(--color-text);
+}
+
+
+.star-places{
+    background-color: white;
+    margin: var(--size-primary);
+}
+.star-places-header{
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--size-half);
+    
+}
+.star-places-header h3{
+    font-size:var(--font-size-title);
+    font-weight: var(--font-light);
+}
+
+.star-places-header p{
+    font-size: var(--font-size-text);
+    margin: 0;
+}
+
+.star-places-body{
+    padding: var(--size-half);
+}
+
+.star-places-body a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--size-half);
+    margin-bottom: var(--size-half);
+    background-color: var(--color-light);
+    transition: all .2s ease-in;
+
+}
+
+.star-places-body h4{
+    font-size: var(--font-size-title);
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+}
+
+.star-places-body a:hover{
+    background-color: #c1c1c1;
+}
+
+.star-places-body img{
+    height: 80px;
+    width: 80px;
+}
+
+.video-overlay{
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    background-color: rgb(0 0 0/50%);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-control-play , .video-control-pause{
+    color: white;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.video-control-pause{
+    display: none;
+}
+
+.video-container{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container video{
+    width: 100%;
+}
+
+.contact-form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form .form-control{
+    border: none;
+    background-color:var(--color-light);
+    margin-bottom: var(--size-half);
+
+}
+.contact-form .form-group i{
+    top: var(--size-half);
+}
+
+.map-container{
+    width: 100%;
+    height: 100%;
+    padding-bottom: var(--size-half);
+}
+
+footer{
+    background-color: var(--color-secondary);
+}
+
+footer p{
+    color: white;
+    margin-bottom: 0;
+    padding: var(--size-primary);
+    text-align: center;
+}
+
+footer p a{
+    color: var(--color-primary);
+}
+
+footer p a:hover{
+    color: #8d4649;
+}

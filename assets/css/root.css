@@ -1,0 +1,27 @@
+:root{
+        /*color*/
+    --color-primary:#ee5057;
+    --color-secondary:#111;
+    --color-text:#898989;
+    --color-light:#eee;
+        /*font*/
+    --font-primary:'Open Sans' ,Helvetica,Arial,sans-serif;
+    --font-light:400;
+    --font-bold:700;
+    --font-size-text:13px;
+    --font-size-title:20px;
+    --font-size-section-title:48px;
+        /*size*/
+    --size-primary:25px;
+    --size-double:calc(var(--size-primary)*2);
+    --size-half:calc(var(--size-primary)/2);
+    --margin-primary:var(--size-primary);
+    --padding-primary:var(--size-primary);
+    --height-primary:120px
+
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
